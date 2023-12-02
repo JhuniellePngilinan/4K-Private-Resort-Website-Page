@@ -891,7 +891,7 @@ h5 {
 
 @media (max-width: 576px) {
   .about {
-    background-image: url("../images/test.png");
+    background-image: url("../images/MobileBG.svg");
     background-position: center;
   }
 
