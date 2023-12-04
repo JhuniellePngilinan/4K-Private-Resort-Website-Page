@@ -423,31 +423,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-h5 {
-  position: absolute;
-  bottom: 1rem;
-  width: 13rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  transition-duration: 200ms;
-}
-
-.group:hover h5 {
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-@media (min-width: 768px) {
-  h5 {
-    bottom: 2rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-}
-
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -547,18 +522,6 @@ h5 {
   margin-right: 2.75rem;
 }
 
-.ml-24 {
-  margin-left: 6rem;
-}
-
-.mt-72 {
-  margin-top: 18rem;
-}
-
-.ml-52 {
-  margin-left: 13rem;
-}
-
 .ml-7 {
   margin-left: 1.75rem;
 }
@@ -595,10 +558,6 @@ h5 {
   display: none;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .h-10 {
   height: 2.5rem;
 }
@@ -611,6 +570,10 @@ h5 {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-full {
   width: 100%;
 }
@@ -619,16 +582,8 @@ h5 {
   width: 9rem;
 }
 
-.w-\[1376px\] {
-  width: 1376px;
-}
-
-.w-\[410px\] {
-  width: 410px;
-}
-
-.max-w-lg {
-  max-width: 32rem;
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .flex-col {
@@ -637,6 +592,10 @@ h5 {
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -750,8 +709,13 @@ h5 {
   line-height: 2rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
   line-height: 1;
 }
 
@@ -879,9 +843,6 @@ h5 {
   background-size: cover;
 }
 
-@media (max-width: 576px) {
-}
-
 .about {
   background-image: url("../images/Frame.png");
   background-repeat: no-repeat;
@@ -898,6 +859,14 @@ h5 {
   .hero {
     background-image: url("../images/Mobile Wallpaper.jpg");
     background-position: center;
+  }
+}
+
+@media (max-width: 280px) {
+  .fold {
+    font-size: 3rem;
+    /* 48px */
+    line-height: 1;
   }
 }
 
@@ -1012,20 +981,12 @@ h5 {
     display: none;
   }
 
-  .md\:h-\[554\.58px\] {
-    height: 554.58px;
-  }
-
-  .md\:w-\[1280px\] {
-    width: 1280px;
-  }
-
   .md\:w-\[1080px\] {
     width: 1080px;
   }
 
-  .md\:w-\[833px\] {
-    width: 833px;
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:flex-row {
@@ -1062,11 +1023,6 @@ h5 {
 
   .md\:text-justify {
     text-align: justify;
-  }
-
-  .md\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
   }
 
   .md\:text-7xl {

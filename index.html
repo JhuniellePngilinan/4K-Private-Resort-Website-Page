@@ -12,105 +12,116 @@
     <title>4K Private Resort</title>
   </head>
   <body>
-    <!-- Hero Section -->
-    <section id="hero" class="hero h-screen ">
-        <!-- Menu/Logo Container -->
-        <nav class= "flex items-center justify-between   bg-white w-full">
-          <!-- Logo on the left -->
-          <a href="#" class="">
-            <img src="images/iconNav.svg" alt="" class="ml-2 w-36">
-          </a>
-          
-          <!-- Menu in the middle -->
-          <div class="text-xl hidden mx-auto my-auto items-center h-10 font-thin font-inter md:flex md:space-x-8 md:text-center md:justify-center">
-              <div class="group">
-                  <a href="#hero" class="text-sky-900">Home</a>
-                  <div class="mx-2 group-hover:border-b group-hover:border-blue-400"></div>
-              </div>
-              <div class="group">
-                  <a href="#" class="text-sky-900">Amenities</a>
-                  <div class="mx-2 group-hover:border-b group-hover:border-blue-400"></div>
-              </div>
-              <div class="group">
-                  <a href="#about" class="text-sky-900">About</a>
-                  <div class="mx-2 group-hover:border-b group-hover:border-blue-400"></div>
-              </div>
-              <div class="group">
-                  <a href="#"class="text-sky-900">Contact Us</a>
-                  <div class="mx-2 group-hover:border-b group-hover:border-blue-400"></div>
-              </div>
+    <!--NavBar-->
+    <nav class= "flex items-center justify-between   bg-white w-full">
+      <!-- Logo on the left -->
+      <a href="#" class="">
+        <img src="images/iconNav.svg" alt="" class="ml-2 w-36">
+      </a>
+      
+      <!-- Menu in the middle -->
+      <div class="text-xl hidden mx-auto my-auto items-center h-10 font-thin font-inter md:flex md:space-x-8 md:text-center md:justify-center">
+          <div class="group">
+              <a href="#hero" class="text-sky-900">Home</a>
+              <div class="mx-2 group-hover:border-b group-hover:border-blue-400"></div>
           </div>
-        <div>
-            <!-- Hamburger Button -->
-            <button
-            id="menu-btn"
-            class=" mr-11 z-30 block md:hidden focus:outline-none hamburger"
-          >
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-          </button>
-        </div>  
-        <!-- Container for the right side with amber background -->
-        <div class="hidden md:flex items-center space-x-4">
-          <!-- "Book Now" button with amber background -->
-          <a href="#" class= "text-white px-10 text-2xl bg-amber-600 font-bold h-[56.81px] flex items-center">
-              Book Now
-          </a>
-        </div>
+          <div class="group">
+              <a href="#" class="text-sky-900">Amenities</a>
+              <div class="mx-2 group-hover:border-b group-hover:border-blue-400"></div>
+          </div>
+          <div class="group">
+              <a href="#about" class="text-sky-900">About</a>
+              <div class="mx-2 group-hover:border-b group-hover:border-blue-400"></div>
+          </div>
+          <div class="group">
+              <a href="#"class="text-sky-900">Contact Us</a>
+              <div class="mx-2 group-hover:border-b group-hover:border-blue-400"></div>
+          </div>
+      </div>
+    <div>
+        <!-- Hamburger Button -->
+        <button
+        id="menu-btn"
+        class=" mr-11 z-30 block md:hidden focus:outline-none hamburger"
+      >
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>  
+    <!-- Container for the right side with amber background -->
+    <div class="hidden md:flex items-center space-x-4">
+      <!-- "Book Now" button with amber background -->
+      <a href="#" class= "text-white px-10 text-2xl bg-amber-600 font-bold h-[56.81px] flex items-center">
+          Book Now
+      </a>
+    </div>
 
-        <!-- Mobile Menu -->
-        <div
-        id="menu"
-        class="bg-black fixed inset-0 z-20 hidden flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue"
-        >
-          <div class="w-full py-3 text-center">
-            <a href="#hero" class="block hover:text-sky-800">Home</a>
-          </div>
-          <div class="w-full py-3 text-center">
-            <a href="#" class="block hover:text-sky-800">Amenities</a>
-          </div>
-          <div class="w-full py-3 text-center">
-            <a href="#about" class="block hover:text-sky-800">About</a>
-          </div>
-          <div class="w-full py-3 text-center">
-            <a href="#" class="block hover:text-sky-800">Contact Us</a>
-          </div>
-        </div>
+    <!-- Mobile Menu -->
+    <div
+    id="menu"
+    class="bg-black fixed inset-0 z-20 hidden flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue"
+    >
+      <div class="w-full py-3 text-center">
+        <a href="#hero" class="block hover:text-sky-800">Home</a>
+      </div>
+      <div class="w-full py-3 text-center">
+        <a href="#" class="block hover:text-sky-800">Amenities</a>
+      </div>
+      <div class="w-full py-3 text-center">
+        <a href="#about" class="block hover:text-sky-800">About</a>
+      </div>
+      <div class="w-full py-3 text-center">
+        <a href="#" class="block hover:text-sky-800">Contact Us</a>
+      </div>
+    </div>
 
-      </nav>
-          
+  </nav>
+  <!-- Hero Section -->
+  <section id="hero" class="hero h-screen flex flex-col items-center justify-center">
+    <!--Container-->
+    <div class="">
+      <!-- Mobile Text -->
+      <div class="text-center fold font-playfair text-7xl md:hidden text-white">
+        Escape.<br>
+        Unwind. <br>
+        Immersed.
+      </div>
 
-        <div class="  ml-24 mt-72 max-w-lg  md:text-8xl font-playfair text-6xl text-white ">
-          <span class="md:hidden ">Escape. Unwind. Immerse.</span>
-          <span class="md:block hidden w-[1376px] ml-52">Indulge in Elegance: <br>Your Best Resort Experience <br>Starts Here!</span>
-        </div>
-    </section>
+      <!-- Website Text -->
+      <div class=" text-white  font-playfair">
+        <span class="md:block hidden text-8xl">Indulge in Elegance: <br>Your Best Resort Experience <br>Starts Here!</span>
+      </div>
+      
+    </div>
+    
+  </section>
 
    <!--Amenities Overview-->
    <section class="Amenities">
 
-   </section>
+  </section>
 
-   <!-- About us Section -->
+  <!-- About us Section -->
   <section id="about" class="about bg-cover bg-no-repeat" >
     <div class="section-container bg-stone-50">
         <!--Title-->
-        <div class="w-[410px] md:w-[1280px]  pt-[72px] ml-7 md:pt-40 mb-[5px] order-2 md:order-1 font-playfair text-4xl md:text-7xl ">
-          <p >Unwind in Style, Your Luxurious
-            Hideaway <br class="md:hidden">Amidst Nature's Embrace
+        <div class="flex flex-col md:flex-row pt-[72px] ml-7 md:pt-40 mb-[5px] order-2 md:order-1 font-playfair text-4xl md:text-7xl ">
+          <p >Unwind in Style, <br class="md:hidden"> Your Luxurious
+            <br>Hideaway Amidst <br class="md:hidden">Nature's Embrace
           </p>
         </div>
-      <div class="flex flex-col md:flex-row md:space-x-10">
+        
+      <div class="flex flex-col justify-center items-center md:flex-row md:space-x-10">
         <!--Text-->
         <div class=" mt-7 order-3 md:order-2 text-[20px] font-inter font-light ml-5 mb-[70px] md:text-xl md:text-justify md:w-[1080px] md:pt-24">
           <p>
             4K Resort is a special place where we've put a lot of heart into creating a relaxing getaway. Our goal is to blend peaceful surroundings with a touch of luxury, making it feel like a second home surrounded by nature. What makes us stand out is our dedication to meeting the different needs of our guests, from comfy rooms to thoughtful amenities. Our team, made up of people who love hospitality, works hard to make sure your stay is smooth and memorable. Whether you're here for a weekend break, a family trip, or a work event, we promise a great experience. Join us at 4K Resort and be part of a story filled with happiness, relaxation, and connection. Each stay with us is a unique chapter waiting to happen.</p>    
         </div>
         <!-- Video -->
-        <div class="mt-[15px] md:mb-20 md:ml-6 order-1 md:order-3 md:mt-8">
-          <div class="md:w-[833px] md:h-[554.58px]">
-            <video id="aboutVideo" controls style="width: 100%; height: 100%;">
+        <div class="mt-[15px] md:mb-20 order-1 md:order-3 md:mt-8">
+          <div class="">
+            <video id="aboutVideo" controls class="mx-auto sm: w-11/12 md:w-full">
               <source src="images/4kvid.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
