@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  h5 {
-    @apply absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black;
-  }
-}
-
-@layer components {
-  .btn {
-    @apply px-10 py-2 my-0 font-bold tracking-widest uppercase border-2 border-black font-alata hover:bg-black hover:text-white;
-  }
-}
-
 .section-container {
   @apply w-full h-full max-w-screen-xl mx-auto;
   background-color: transparent;
@@ -36,8 +24,6 @@
   background-size: cover;
 }
 
-@media (max-width: 576px) {
-}
 .about {
   background-image: url("../images/Frame.png");
   background-repeat: no-repeat;
@@ -55,7 +41,12 @@
     background-position: center;
   }
 }
-
+@media (max-width: 280px) {
+  .fold {
+    font-size: 3rem; /* 48px */
+    line-height: 1;
+  }
+}
 /* HAMBURGER MENU */
 
 .hamburger {
