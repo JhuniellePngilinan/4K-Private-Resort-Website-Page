@@ -542,6 +542,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 70px;
 }
 
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
 .mt-\[15px\] {
   margin-top: 15px;
 }
@@ -627,6 +631,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   scroll-behavior: smooth;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .bg-stone-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 249 / var(--tw-bg-opacity));
@@ -691,12 +699,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .font-inter {
   font-family: Inter, sans-serif;
 }
 
 .font-playfair {
   font-family: Playfair Display, serif;
+}
+
+.font-raleway {
+  font-family: Raleway, sans-serif;
+}
+
+.font-montserrat {
+  font-family: Montserrat, sans-serif;
 }
 
 .text-xl {
@@ -760,6 +780,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .opacity-90 {
   opacity: 0.9;
+}
+
+.invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .section-container {
@@ -850,6 +875,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 100%;
 }
 
+#amenities {
+  background-image: url("../images/Amenities/bgDaytour.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 576px) {
   .about {
     background-image: url("../images/MobileBG.svg");
@@ -868,6 +899,27 @@ Ensure the default browser behavior of the `hidden` attribute.
     /* 48px */
     line-height: 1;
   }
+}
+
+/* Slider Styles*/
+
+.swiper {
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* HAMBURGER MENU */
@@ -961,10 +1013,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 5rem;
   }
 
-  .md\:ml-6 {
-    margin-left: 1.5rem;
-  }
-
   .md\:mt-8 {
     margin-top: 2rem;
   }
@@ -983,10 +1031,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-\[1080px\] {
     width: 1080px;
-  }
-
-  .md\:w-full {
-    width: 100%;
   }
 
   .md\:flex-row {
@@ -1011,10 +1055,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:pt-40 {
     padding-top: 10rem;
-  }
-
-  .md\:pt-24 {
-    padding-top: 6rem;
   }
 
   .md\:text-center {

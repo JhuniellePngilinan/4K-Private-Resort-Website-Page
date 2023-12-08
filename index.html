@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@400&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Inter&family=Montserrat:wght@900&family=Playfair+Display:wght@600&family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="sliderstyles.css" />
     <title>4K Private Resort</title>
   </head>
   <body>
     <!--NavBar-->
     <nav class= "flex items-center justify-between   bg-white w-full">
       <!-- Logo on the left -->
-      <a href="#" class="">
+      <a href="#hero" class="">
         <img src="images/iconNav.svg" alt="" class="ml-2 w-36">
       </a>
       
@@ -26,7 +28,7 @@
               <div class="mx-2 group-hover:border-b group-hover:border-blue-400"></div>
           </div>
           <div class="group">
-              <a href="#" class="text-sky-900">Amenities</a>
+              <a href="#amenities" class="text-sky-900">Amenities</a>
               <div class="mx-2 group-hover:border-b group-hover:border-blue-400"></div>
           </div>
           <div class="group">
@@ -66,7 +68,7 @@
         <a href="#hero" class="block hover:text-sky-800">Home</a>
       </div>
       <div class="w-full py-3 text-center">
-        <a href="#" class="block hover:text-sky-800">Amenities</a>
+        <a href="#amenities" class="block hover:text-sky-800">Amenities</a>
       </div>
       <div class="w-full py-3 text-center">
         <a href="#about" class="block hover:text-sky-800">About</a>
@@ -97,11 +99,6 @@
     
   </section>
 
-   <!--Amenities Overview-->
-   <section class="Amenities">
-
-  </section>
-
   <!-- About us Section -->
   <section id="about" class="about bg-cover bg-no-repeat" >
     <div class="section-container bg-stone-50">
@@ -114,23 +111,100 @@
         
       <div class="flex flex-col justify-center items-center md:flex-row md:space-x-10">
         <!--Text-->
-        <div class=" mt-7 order-3 md:order-2 text-[20px] font-inter font-light ml-5 mb-[70px] md:text-xl md:text-justify md:w-[1080px] md:pt-24">
+        <div class=" mt-7 order-3 md:order-2 text-[20px] font-inter font-light ml-5 mb-[70px] md:text-xl md:text-justify md:w-[1080px] text-justify mr-5">
           <p>
             4K Resort is a special place where we've put a lot of heart into creating a relaxing getaway. Our goal is to blend peaceful surroundings with a touch of luxury, making it feel like a second home surrounded by nature. What makes us stand out is our dedication to meeting the different needs of our guests, from comfy rooms to thoughtful amenities. Our team, made up of people who love hospitality, works hard to make sure your stay is smooth and memorable. Whether you're here for a weekend break, a family trip, or a work event, we promise a great experience. Join us at 4K Resort and be part of a story filled with happiness, relaxation, and connection. Each stay with us is a unique chapter waiting to happen.</p>    
         </div>
         <!-- Video -->
         <div class="mt-[15px] md:mb-20 order-1 md:order-3 md:mt-8">
-          <div class="">
             <video id="aboutVideo" controls class="mx-auto sm: w-11/12">
               <source src="images/4kvid.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
-          </div>
         </div>
       </div>
     </div>
   </section>
+<!--Amenities Overview-->
+<section id="amenities" class="">
+  <!--Sliders-->
+    <div class="blog-slider">
+      <div class="blog-slider__item">
+          <!--Sliders-->
+          <div class="swiper mySwiper rounded-xl">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/Amenities/1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/Amenities/2.jpg" alt="">
+              </div>
+              <div class="swiper-slide ">
+                <img src="images/Amenities/3.jpg" alt="">
+              </div>
+              <div class="swiper-slide ">
+                <img src="images/Amenities/4.jpg" alt="">
+              </div>
+              <div class="swiper-slide ">
+                <img src="images/Amenities/5.jpg" alt="">
+              </div>
+              <div class="swiper-slide ">
+                <img src="images/Amenities/6.jpg" alt="">
+              </div>
+              <div class="swiper-slide ">
+                <img src="images/Amenities/7.jpg" alt="">
+              </div>
+              <div class="swiper-slide ">
+                <img src="images/Amenities/8.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!--Content-->
+          <div class="blog-slider__content">
+            <span class="blog-slider__code font-raleway">Escape to the lap of luxury at 4K Resort, where modern elegance meets natural beauty. From the moment you step onto the grounds, you're enveloped in tranquility. The well-appointed accommodations offer panoramic views, and the spa and wellness facilities provide a haven for relaxation.</span>
+            <div class="blog-slider__title font-playfair">Overnight Amenities include:</div>
+            <div class="blog-slider__text font-raleway">
+              1 Fully-Airconditioned Bedroom,
+              Fast Wifi,
+              Ice Box,
+              Two Burner Gas Stove,
+              BBQ Grill,
+              Karaoke,
+              Electric Fans,
+              Mini Bar,
+              Table and Chairs,
+               </div>
+               <button class="blog-slider__button font-montserrat">DAY TOUR</button>
+               <button class="blog-slider__button2 font-montserrat">OVERNIGHT</button>
+          </div>
+        </div> 
+      </div> 
+  </div>
+</section>
 
-   
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Swiper Code JS-->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centerSlides: true,
+      autoplay:{
+        delay:3000,
+        disableOnInteraction: false,
+      },
+      effect: 'fade',
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      }
+    });
+    </script>
   </body>
 </html>

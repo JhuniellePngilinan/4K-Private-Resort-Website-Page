@@ -30,7 +30,11 @@
   background-size: cover;
   min-height: 100%;
 }
-
+#amenities {
+  background-image: url("../images/Amenities/bgDaytour.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @media (max-width: 576px) {
   .about {
     background-image: url("../images/MobileBG.svg");
@@ -46,6 +50,25 @@
     font-size: 3rem; /* 48px */
     line-height: 1;
   }
+}
+
+/* Slider Styles*/
+.swiper {
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* HAMBURGER MENU */
 
