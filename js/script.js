@@ -12,10 +12,20 @@ function navToggle() {
 // Function to handle video autoplay
 function handleVideoAutoplay(entries, observer) {
   entries.forEach(entry => {
+    const video = document.getElementById('aboutVideo');
+
     if (entry.isIntersecting) {
-      const video = document.getElementById('aboutVideo');
-      video.play();
-      observer.unobserve(entry.target);
+      // Video is in the viewport
+      if (video.paused) {
+        // If the video is paused, play it
+        video.play();
+      }
+    } else {
+      // Video is not in the viewport
+      if (!video.paused) {
+        // If the video is playing, pause it
+        video.pause();
+      }
     }
   });
 }
@@ -26,6 +36,7 @@ const observer = new IntersectionObserver(handleVideoAutoplay, { threshold: 0.5 
 // Target the about section for observation
 const aboutSection = document.getElementById('about');
 observer.observe(aboutSection);
+
 
 //FUNCTION TO CHANGE STYLE "AMENITIES SECTION"
 document.addEventListener("DOMContentLoaded", function () {
